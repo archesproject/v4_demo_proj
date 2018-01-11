@@ -1,0 +1,11 @@
+{
+  "name": "select2v3",
+  "_cacheHeaders": {
+    "Last-Modified": "Wed, 22 Jun 2016 14:46:41 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "main": "index.js",
+  "_source": "http://cdnjs.cloudflare.com/ajax/libs/select2/3.5.1/select2.min.js",
+  "_target": "*",
+  "_originalSource": "http://cdnjs.cloudflare.com/ajax/libs/select2/3.5.1/select2.min.js"
+}

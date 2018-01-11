@@ -1,0 +1,14 @@
+{
+  "name": "geojson-extent",
+  "homepage": "https://github.com/mapbox/geojson-extent",
+  "version": "0.3.2",
+  "_release": "0.3.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.2",
+    "commit": "cf3e72e23598ea6b3343584d5deacb6377ca2cc4"
+  },
+  "_source": "https://github.com/mapbox/geojson-extent.git",
+  "_target": "0.3.2",
+  "_originalSource": "mapbox/geojson-extent"
+}
