@@ -58,6 +58,8 @@ STATIC_ROOT = '/var/www/media'
 
 RESOURCE_IMPORT_LOG = os.path.join(APP_ROOT, 'logs', 'resource_import.log')
 
+ROOT_URLCONF = 'v4_demo.urls'
+
 LOGGING = {   'disable_existing_loggers': False,
     'handlers': {   'file': {   'class': 'logging.FileHandler',
                                 'filename': os.path.join(APP_ROOT, 'arches.log'),
