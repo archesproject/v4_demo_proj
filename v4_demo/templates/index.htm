@@ -75,22 +75,20 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 <div class="menu-container">
                     <ul class="nav navbar-nav">
                         <li class="page-scroll">
-                            <a href="https://www.archesproject.org/">{% trans "Arches Project Website" %}</a>
+                            <a href="#about">{% trans "Arches Project Website" %}</a>
                         </li>
                         <li class="page-scroll">
                             <a href="https://www.archesproject.org/v4demo">{% trans "Request Login" %}</a>
                         </li>
-                        <!-- 
                         <li class="page-scroll">
                             <a href="#services">{% trans "Capabilities" %}</a>
                         </li>
                         <li class="page-scroll">
                             <a href="#news">{% trans "News" %}</a>
                         </li>
-                        -->
                         <li class="page-scroll">
-                        <a href="{% url 'search_home' %}">{% trans "Search" %}</a>
-			</li>
+                            <a href="{% url 'search_home' %}">{% trans "Search" %}</a>
+                        </li>
                         {% if user|can_create_resource_instance %}
                         <li class="page-scroll">
                             <a href="{% url 'resource' %}">{% trans "Manage Data" %}</a>
@@ -109,7 +107,6 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             {% else %}
                             <a id="auth-link" data-bind="click: function(){showAuthMenu(!showAuthMenu())}">
                                 {% trans "Welcome" %} {{ user.first_name|default:user.username }}
-
                             </a>
                             <span class="fa fa-chevron-circle-down auth-options" data-bind="click: function(){showAuthMenu(!showAuthMenu())}"></span>
 
@@ -118,7 +115,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <!-- ko if: showAuthMenu -->
                         <ul class="auth-options">
                             <li><a href="{% url 'auth' %}?next={% url 'home' %}{% if user.username != 'anonymous' %}&logout=true{% endif %}">{% trans 'Logout' %}</a></li>
-                            <li><a href="{% url 'user_profile_manager' %}">{% trans 'User Profile' %}</a></li>                        </ul>
+                            <li><a href="{% url 'user_profile_manager' %}">{% trans 'User Profile' %}</a></li>
+                        </ul>
                         <!-- /ko -->
                     </ul>
                 </div>
@@ -196,7 +194,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <li data-transition="slideup" data-slotamount="5" data-masterspeed="700" data-title="Slide 2">
                         <!-- MAIN IMAGE -->
                         <img src="{% static 'img/landing/landing2.png' %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-
+                        
                         <!-- LAYERS -->
                         <div class="tp-caption rs-caption-1 sft start text-bold" data-x="center" data-hoffset="0" data-y="110" data-speed="800" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300">
                             {% trans "Highlight Your Cultural Heritage" %}
@@ -277,27 +275,27 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <!-- End Intro Section -->
 
 
-    <!--  About Section 
-    <section class="about-section section-first" style="padding-top: 0px;">
+    <!--  About Section -->
+    <!-- <section class="about-section section-first" style="padding-top: 0px;"> -->
 
 
-        <div id="about" class="about-image bg-grey">
-            <div class="container">
-                <div class="title-v1">
-                    <h1>{% trans "What is Arches" %}</h1>
-                    <p>{% trans "Arches is <strong>awesome</strong> technology designed to ease Cultural Heritage data management.<br> Use Arches to build an inventory of cultural heritage assets such as objects, research activities, areas, datasets, and people or  organizations." %}</p>
-                </div>
+        <!-- <div id="about" class="about-image bg-grey"> -->
+            <!-- <div class="container"> -->
+                <!-- <div class="title-v1"> -->
+                    <!-- <h1>{% trans "What is Arches" %}</h1> -->
+                    <!-- <p>{% trans "Arches is <strong>awesome</strong> technology designed to ease Cultural Heritage data management.<br> Use Arches to build an inventory of cultural heritage assets such as objects, research activities, areas, datasets, and people or  organizations." %}</p> -->
+            <!--     </div>
                 <div class="img-center">
                     <img class="img-responsive" src="{% static 'img/landing/disco.jpg' %}" alt="">
                 </div>
             </div>
         </div>
 
-    </section>
-      About Section -->
+    </section> -->
+    <!--  About Section -->
 
-    <!-- Services Section
-    <section id="services">
+    <!-- Services Section -->
+<!--     <section id="services">
         <div class="container content-lg">
             <div class="title-v1">
                 <h2>{% trans "Capabilities" %}</h2>
@@ -350,10 +348,10 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             </div>
         </div>
     </section>
-  End Services Section -->
+ -->    <!-- End Services Section -->
 
-    <!-- News Section 
-    <section id="news" class="news-section bg-grey" >
+    <!-- News Section -->
+ <!--    <section id="news" class="news-section bg-grey" >
         <div class="container content-lg">
             <div class="title-v1">
                 <h2>{% trans "Latest News" %}</h2>
@@ -362,7 +360,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
             <div class="row news-v1 text-center">
                 Add your content here
-            </div>
+            </div> -->
 
             <!-- <div class="row news-v1">
                 <div class="col-md-4 md-margin-bottom-40">
@@ -405,14 +403,13 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </div>
                 </div>
             </div> -->
-        <!-- 
-        </div>
-    </section> -->
+        <!-- </div> -->
+    <!-- </section> -->
     <!-- End News Section -->
 
 
-    <!-- Contact Section 
-    <section id="contact" class="contacts-section">
+    <!-- Contact Section -->
+  <!--   <section id="contact" class="contacts-section">
         <div class="copyright-section">
             <p>{{copyright_year}} &copy; {{copyright_text}} </p>
             <ul class="social-icons">
@@ -434,7 +431,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             </ul>
             <span class="page-scroll"><a href="#intro"><i class="fa fa-angle-double-up back-to-top"></i></a></span>
         </div>
-    </section>
+    </section> -->
     <!-- End Contact Section -->
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
@@ -458,7 +455,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <script src="{% static 'plugins/style-switcher.js' %}"></script>
     <script src="{% static 'plugins/revolution-slider.js' %}"></script>
     <script src="{% static 'plugins/cube-portfolio-lightbox.js' %}"></script>
-    <script src="{% static 'bower_components/knockout/dist/knockout.js' %}"></script>
+    <script src="{% static 'packages/knockout/build/output/knockout-latest.js' %}"></script>
 
 
     <script>

@@ -20,6 +20,43 @@ import os
 #)
 
 
+
+#AUTH_PASSWORD_VALIDATORS = [
+#    {
+#        "NAME": "arches.app.utils.password_validation.NumericPasswordValidator"
+#    }, 
+#    {
+#        "NAME": "arches.app.utils.password_validation.SpecialCharacterValidator", 
+#        "OPTIONS": {
+#            "special_characters": [
+#                "!", 
+#                "@", 
+#                "#", 
+#                ")", 
+#                "(", 
+#                "*", 
+#                "&", 
+#                "^", 
+#                "%", 
+#                "$"
+#            ]
+#        }
+#    }, 
+#    {
+#        "NAME": "arches.app.utils.password_validation.HasNumericCharacterValidator"
+#    }, 
+#    {
+#        "NAME": "arches.app.utils.password_validation.HasUpperAndLowerCaseValidator"
+#    }, 
+#    {
+#        "NAME": "arches.app.utils.password_validation.MinLengthValidator", 
+#        "OPTIONS": {
+#            "min_length": 9
+#        }
+#    }
+#]
+
+
 #COPYRIGHT_TEXT = 'All Rights Reserved.'
 
 #COPYRIGHT_YEAR = '2016'
@@ -74,6 +111,18 @@ import os
 
 #ELASTICSEARCH_HTTP_PORT = 9200
 
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+#EMAIL_HOST = 'localhost'
+
+#EMAIL_HOST_PASSWORD = ''
+
+#EMAIL_HOST_USER = ''
+
+#EMAIL_PORT = 25
+
+#EMAIL_USE_TLS = False
+
 
 #INSTALLED_APPS = (
 #    django.contrib.admin,
@@ -87,6 +136,7 @@ import os
 #    arches.app.models,
 #    arches.management,
 #    guardian,
+#    captcha,
 #)
 
 
@@ -139,16 +189,10 @@ import os
 #MEDIA_URL = '/files/'
 
 
-#MIDDLEWARE_CLASSES = (
-#    django.contrib.sessions.middleware.SessionMiddleware,
-#    django.middleware.common.CommonMiddleware,
-#    django.middleware.csrf.CsrfViewMiddleware,
-#    django.contrib.auth.middleware.AuthenticationMiddleware,
-#    django.contrib.auth.middleware.SessionAuthenticationMiddleware,
-#    django.contrib.messages.middleware.MessageMiddleware,
-#    django.middleware.clickjacking.XFrameOptionsMiddleware,
-#    arches.app.utils.set_anonymous_user.SetAnonymousUser,
-#)
+#MIDDLEWARE_CLASSES = [
+#    "django.middleware.common.CommonMiddleware", 
+#    "django.middleware.csrf.CsrfViewMiddleware"
+#]
 
 
 #MODE = 'PROD'

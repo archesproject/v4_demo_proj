@@ -21,10 +21,15 @@ TEMPLATES[0]['DIRS'].append(os.path.join(APP_ROOT, 'widgets', 'templates'))
 TEMPLATES[0]['DIRS'].insert(0, os.path.join(APP_ROOT, 'templates'))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'x0pde)ud(jmnf761&&ow=o=78d_!qn6gim90r*q7z+-32pk806'
+SECRET_KEY = '8&+0g)ytw7e7)(f1y-8yx@+$fyuz6eonfb-451!v%w0)zn_439'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+ROOT_URLCONF = 'v4_demo.urls'
+
+# a prefix to append to all elasticsearch indexes, note: must be lower case
+ELASTICSEARCH_PREFIX = 'v4_demo'
 
 DATABASES = {
     "default": {
@@ -57,8 +62,6 @@ WSGI_APPLICATION = 'v4_demo.wsgi.application'
 STATIC_ROOT = '/var/www/media'
 
 RESOURCE_IMPORT_LOG = os.path.join(APP_ROOT, 'logs', 'resource_import.log')
-
-ROOT_URLCONF = 'v4_demo.urls'
 
 LOGGING = {   'disable_existing_loggers': False,
     'handlers': {   'file': {   'class': 'logging.FileHandler',
