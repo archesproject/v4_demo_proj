@@ -75,8 +75,12 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 <div class="menu-container">
                     <ul class="nav navbar-nav">
                         <li class="page-scroll">
-                            <a href="#about">{% trans "Arches Project Website" %}</a>
+                            <a href="{% url 'search_home' %}">{% trans "Search Demo Data" %}</a>
                         </li>
+                        <li class="page-scroll">
+                            <a href="https://www.archesproject.org/">{% trans "About Arches" %}</a>
+                        </li>
+                        <!--
                         <li class="page-scroll">
                             <a href="https://www.archesproject.org/v4demo">{% trans "Request Login" %}</a>
                         </li>
@@ -86,9 +90,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <li class="page-scroll">
                             <a href="#news">{% trans "News" %}</a>
                         </li>
-                        <li class="page-scroll">
-                            <a href="{% url 'search_home' %}">{% trans "Search" %}</a>
-                        </li>
+                        
                         {% if user|can_create_resource_instance %}
                         <li class="page-scroll">
                             <a href="{% url 'resource' %}">{% trans "Manage Data" %}</a>
@@ -99,6 +101,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <a href="{% url 'graph' '' %}">{% trans "Design" %}</a>
                         </li>
                         {% endif %}
+                            -->
                         <li class="page-scroll" style="display: flex; flex-direction: row">
                             {% if user.username == 'anonymous' %}
                             <a id="auth-link" href="{% url 'auth' %}?next={% url 'home' %}{% if user.username != 'anonymous' %}&logout=true{% endif %}">
@@ -233,7 +236,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
                         <!-- LAYER -->
                         <div class="tp-caption rs-caption-3 sfb" data-x="center" data-hoffset="0" data-y="370" data-speed="800" data-start="3500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
-                            <span class="page-scroll"><a href="http://54.219.186.156/search?termFilter=%5B%7B%22context%22%3A%22c864c929-f78a-4ad6-9f12-03b52ec69398%22%2C%22context_label%22%3A%22Heritage%20Resource%20Type%22%2C%22id%22%3A0%2C%22text%22%3A%22Chamber%20Tomb%22%2C%22type%22%3A%22concept%22%2C%22value%22%3A%2237db09a3-186b-497e-9227-ad2cf6c8b493%22%2C%22inverted%22%3Afalse%7D%5D&typeFilter=%5B%7B%22graphid%22%3A%22b3dd28cc-0de1-11e8-ae2d-02b2d3297e3a%22%2C%22name%22%3A%22Archaeological%20Resources%22%2C%22inverted%22%3Afalse%7D%5D&mapFilter=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22inverted%22%3Afalse%2C%22buffer%22%3A%7B%22width%22%3A%22500%22%2C%22unit%22%3A%22m%22%7D%7D%2C%22geometry%22%3A%7B%22coordinates%22%3A%5B32.595343834639976%2C25.729221039321246%5D%2C%22type%22%3A%22Point%22%7D%7D%5D%7D&no_filters=false&page=1" class="btn-u btn-brd btn-brd-hover btn-u-light">{% trans "Search Valley of the Queens" %}</a></span>
+                            <span class="page-scroll"><a href="http://54.219.186.156/search?termFilter=%5B%7B%22context%22%3A%22c864c929-f78a-4ad6-9f12-03b52ec69398%22%2C%22context_label%22%3A%22Heritage%20Resource%20Type%22%2C%22id%22%3A1%2C%22text%22%3A%22Chamber%20Tomb%22%2C%22type%22%3A%22concept%22%2C%22value%22%3A%2237db09a3-186b-497e-9227-ad2cf6c8b493%22%2C%22inverted%22%3Afalse%7D%2C%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22QV%22%2C%22text%22%3A%22QV%22%2C%22value%22%3A%22QV%22%7D%5D&no_filters=false&page=1" class="btn-u btn-brd btn-brd-hover btn-u-light">{% trans "Search Valley of the Queens" %}</a></span>
                         </div>
 
                         <!-- Attribution -->
