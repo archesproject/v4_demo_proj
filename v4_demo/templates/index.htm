@@ -153,10 +153,10 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <!-- LAYER -->
                         <div class="tp-caption rs-caption-3 sft" data-x="center" data-hoffset="0" data-y="360" data-speed="800" data-start="3500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
                             {% if user.username == 'anonymous' %}
-                            <span class="page-scroll"><a href="{% url 'auth' %}?next={% url 'resource' %}" class="btn-u btn-brd btn-brd-hover btn-u-light">{% trans "Login to Manage Data" %}</a></span>
+                            <span class="page-scroll"><a href="{% url 'auth' %}?next={% url 'resource' %}" class="btn-u btn-brd btn-brd-hover btn-u-light">{% trans "Login to Edit Data" %}</a></span>
                             {% endif %}
                             {% if user|can_create_resource_instance %}
-                            <span class="page-scroll"><a href="{% url 'resource' %}" class="btn-u btn-brd btn-brd-hover btn-u-light">{% trans "Manage Data" %}</a></span>
+                            <span class="page-scroll"><a href="{% url 'resource' %}" class="btn-u btn-brd btn-brd-hover btn-u-light">{% trans "Edit Data" %}</a></span>
                             {% endif %}
                         </div>
 
