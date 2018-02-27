@@ -141,17 +141,17 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <img src="{% static 'img/landing/landing1.png' %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 
                         <!-- LAYERS -->
-                        <div class="tp-caption rs-caption-1 sft start text-bold" delay="4500" data-x="center" data-hoffset="0" data-y="100" data-speed="800" data-start="1000" data-easing="Back.easeInOut" data-endspeed="300">
+                        <div class="tp-caption rs-caption-1 sft start text-bold" style="background: rgba(0,0,0,.5);" delay="4500" data-x="center" data-hoffset="0" data-y="100" data-speed="800" data-start="1000" data-easing="Back.easeInOut" data-endspeed="300">
                             Arches
                         </div>
 
                         <!-- LAYER -->
-                        <div class="tp-caption rs-caption-2 sft" data-x="center" data-hoffset="0" data-y="200" data-speed="1000" data-start="3000" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                        <div class="tp-caption rs-caption-2 sft" style="background: rgba(0,0,0,.5);" data-x="center" data-hoffset="0" data-y="200" data-speed="1000" data-start="3000" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
                             {% trans "An Open Source Data Management Platform<br> For the Cultural Heritage Field" %}
                         </div>
 
                         <!-- LAYER -->
-                        <div class="tp-caption rs-caption-3 sft" data-x="center" data-hoffset="0" data-y="360" data-speed="800" data-start="3500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                        <div class="tp-caption rs-caption-3 sft" style="background: rgba(0,0,0,.5);" data-x="center" data-hoffset="0" data-y="360" data-speed="800" data-start="3500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
                             {% if user.username == 'anonymous' %}
                             <span class="page-scroll"><a href="{% url 'auth' %}?next={% url 'resource' %}" class="btn-u btn-brd btn-brd-hover btn-u-light">{% trans "Login to Edit Data" %}</a></span>
                             {% endif %}
@@ -199,17 +199,17 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <img src="{% static 'img/landing/landing2.png' %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
                         
                         <!-- LAYERS -->
-                        <div class="tp-caption rs-caption-1 sft start text-bold" data-x="center" data-hoffset="0" data-y="110" data-speed="800" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300">
+                        <div class="tp-caption rs-caption-1 sft start text-bold" style="background: rgba(0,0,0,.5);" data-x="center" data-hoffset="0" data-y="110" data-speed="800" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300">
                             {% trans "Highlight Your Cultural Heritage" %}
                         </div>
 
                         <!-- LAYER -->
-                        <div class="tp-caption rs-caption-2 sfb" data-x="center" data-hoffset="0" data-y="210" data-speed="800" data-start="2500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                        <div class="tp-caption rs-caption-2 sfb" style="background: rgba(0,0,0,.5);" data-x="center" data-hoffset="0" data-y="210" data-speed="800" data-start="2500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
                             {% trans "Customize Arches to highlight a cultural heritage theme<br> such as 'Frank Lloyd Wright in Los Angeles'" %}
                         </div>
 
                         <!-- LAYER -->
-                        <div class="tp-caption rs-caption-3 sfb" data-x="center" data-hoffset="0" data-y="370" data-speed="800" data-start="3500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                        <div class="tp-caption rs-caption-3 sfb" style="background: rgba(0,0,0,.5);" data-x="center" data-hoffset="0" data-y="370" data-speed="800" data-start="3500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
                             <span class="page-scroll"><a href="http://54.219.186.156/search?termFilter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22Frank%20Lloyd%20Wright%22%2C%22text%22%3A%22Frank%20Lloyd%20Wright%22%2C%22value%22%3A%22Frank%20Lloyd%20Wright%22%7D%5D&no_filters=false&page=1" class="btn-u btn-brd btn-brd-hover btn-u-light">{% trans "Search Frank Lloyd Wright" %}</a></span>
                         </div>
 
@@ -225,17 +225,17 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <img src="{% static 'img/landing/landing3.png' %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 
                         <!-- LAYERS -->
-                        <div class="tp-caption rs-caption-1 sft start text-bold" data-x="center" data-hoffset="0" data-y="110" data-speed="800" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300">
+                        <div class="tp-caption rs-caption-1 sft start text-bold" style="background: rgba(0,0,0,.5);" data-x="center" data-hoffset="0" data-y="110" data-speed="800" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300">
                             {% trans "Highlight Your Cultural Heritage" %}
                         </div>
 
                         <!-- LAYER -->
-                        <div class="tp-caption rs-caption-2 sfb" data-x="center" data-hoffset="0" data-y="210" data-speed="800" data-start="2500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                        <div class="tp-caption rs-caption-2 sfb" style="background: rgba(0,0,0,.5);" data-x="center" data-hoffset="0" data-y="210" data-speed="800" data-start="2500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
                             {% trans "Customize Arches to highlight a cultural heritage theme<br> such as 'Chamber Tombs in the Valley of the Queens'" %}
                         </div>
 
                         <!-- LAYER -->
-                        <div class="tp-caption rs-caption-3 sfb" data-x="center" data-hoffset="0" data-y="370" data-speed="800" data-start="3500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                        <div class="tp-caption rs-caption-3 sfb" style="background: rgba(0,0,0,.5);" data-x="center" data-hoffset="0" data-y="370" data-speed="800" data-start="3500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
                             <span class="page-scroll"><a href="http://54.219.186.156/search?termFilter=%5B%7B%22context%22%3A%22c864c929-f78a-4ad6-9f12-03b52ec69398%22%2C%22context_label%22%3A%22Heritage%20Resource%20Type%22%2C%22id%22%3A1%2C%22text%22%3A%22Chamber%20Tomb%22%2C%22type%22%3A%22concept%22%2C%22value%22%3A%2237db09a3-186b-497e-9227-ad2cf6c8b493%22%2C%22inverted%22%3Afalse%7D%2C%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22QV%22%2C%22text%22%3A%22QV%22%2C%22value%22%3A%22QV%22%7D%5D&no_filters=false&page=1" class="btn-u btn-brd btn-brd-hover btn-u-light">{% trans "Search Valley of the Queens" %}</a></span>
                         </div>
 
@@ -251,17 +251,17 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <img src="{% static 'img/landing/landing4.png' %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 
                         <!-- LAYERS -->
-                        <div class="tp-caption rs-caption-1 sft start text-bold" data-x="center" data-hoffset="0" data-y="110" data-speed="800" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300">
+                        <div class="tp-caption rs-caption-1 sft start text-bold" style="background: rgba(0,0,0,.5);" data-x="center" data-hoffset="0" data-y="110" data-speed="800" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300">
                             {% trans "Highlight Your Cultural Heritage" %}
                         </div>
 
                         <!-- LAYER -->
-                        <div class="tp-caption rs-caption-2 sfb" data-x="center" data-hoffset="0" data-y="210" data-speed="800" data-start="2500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                        <div class="tp-caption rs-caption-2 sfb" style="background: rgba(0,0,0,.5);" data-x="center" data-hoffset="0" data-y="210" data-speed="800" data-start="2500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
                             {% trans "Customize Arches to highlight a cultural heritage theme<br> such as 'Case Study Houses in Los Angeles'" %}
                         </div>
 
                         <!-- LAYER -->
-                        <div class="tp-caption rs-caption-3 sfb" data-x="center" data-hoffset="0" data-y="370" data-speed="800" data-start="3500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                        <div class="tp-caption rs-caption-3 sfb" style="background: rgba(0,0,0,.5);" data-x="center" data-hoffset="0" data-y="370" data-speed="800" data-start="3500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
                             <span class="page-scroll"><a href="http://54.219.186.156/search?termFilter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22Case%20Study%22%2C%22text%22%3A%22Case%20Study%22%2C%22value%22%3A%22Case%20Study%22%7D%2C%7B%22context%22%3A%22c864c929-f78a-4ad6-9f12-03b52ec69398%22%2C%22context_label%22%3A%22Heritage%20Resource%20Type%22%2C%22id%22%3A0%2C%22text%22%3A%22House%22%2C%22type%22%3A%22concept%22%2C%22value%22%3A%226927ebf1-6de3-4a92-b9dd-cef0ae67c640%22%2C%22inverted%22%3Afalse%7D%5D&no_filters=false&page=1" class="btn-u btn-brd btn-brd-hover btn-u-light">{% trans "Search Case Study Houses" %}</a></span>
                         </div>
 
