@@ -89,6 +89,8 @@ TILE_CACHE_CONFIG = {
     # "secret": "<secret key>"
 }
 
+DATE_IMPORT_EXPORT_FORMAT = '%m/%d/%Y'
+
 try:
     from settings_local import *
 except ImportError:
