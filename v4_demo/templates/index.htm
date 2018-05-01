@@ -44,6 +44,27 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href="{% static 'css/index.css' %}" rel="stylesheet">
 
+    <style>
+        #search_demo_data:visited {
+            color:#CD5C5C;
+        }
+        #search_demo_data:hover {
+            color:red;
+        }
+        #about_arches:visited {
+            color:#CD5C5C;
+        }
+        #about_arches:hover {
+            color:red;
+        }
+        #auth-link:visited {
+            color:#CD5C5C;
+        }
+        #auth-link:hover {
+            color:red;
+        }
+    </style>
+
 </head>
 
 <!--
@@ -75,10 +96,10 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 <div class="menu-container">
                     <ul class="nav navbar-nav">
                         <li class="page-scroll">
-                            <a href="{% url 'search_home' %}">{% trans "Search Demo Data" %}</a>
+                            <a href="{% url 'search_home' %}" id="search_demo_data">{% trans "Search Demo Data" %}</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="https://www.archesproject.org/" target="_blank">{% trans "About Arches" %}</a>
+                            <a href="https://www.archesproject.org/" target="_blank" id="about_arches">{% trans "About Arches" %}</a>
                         </li>
                         <!--
                         <li class="page-scroll">
